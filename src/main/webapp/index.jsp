@@ -63,7 +63,11 @@
             display: inline-block;
             background-color: #414141;
             border-radius: 10px;
-            padding: 5px 20px;
+            padding: 1px 15px;
+        }
+
+        article a div p {
+            font-size: 15px;
         }
     </style>
 </head>
@@ -95,6 +99,7 @@
                 <a href="jsp-preview.jsp"><div><p>jsp-preview.jsp</p></div></a>
                 <a href="servlet-mapping"><div><p>servlet-mapping</p></div></a>
                 <a href="servlet-mapping-2"><div><p>servlet-mapping-2</p></div></a>
+                <a href="life-cycle"><div><p>life-cycle</p></div></a>
             </article>
         </div>
     </div>

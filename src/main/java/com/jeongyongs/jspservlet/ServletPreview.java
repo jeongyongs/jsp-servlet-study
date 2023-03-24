@@ -19,7 +19,8 @@ public class ServletPreview extends HttpServlet {
         out.write("<html>");
         out.write("<head></head>");
         out.write("<body>");
-        out.write("<p>This is the servlet preview.</p>");
+        out.write("<h1>Chapter02</h1>");
+        out.write("<h1>This is the servlet preview.</h1>");
         out.write("</body>");
         out.write("</html>");
     }
