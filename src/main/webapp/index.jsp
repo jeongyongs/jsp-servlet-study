@@ -93,6 +93,8 @@
             <article>
                 <h1>Links</h1>
                 <a href="jsp-preview.jsp"><div><p>jsp-preview.jsp</p></div></a>
+                <a href="servlet-mapping"><div><p>servlet-mapping</p></div></a>
+                <a href="servlet-mapping-2"><div><p>servlet-mapping-2</p></div></a>
             </article>
         </div>
     </div>
