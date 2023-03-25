@@ -101,6 +101,7 @@
                 <a href="servlet-mapping-2"><div><p>servlet-mapping-2</p></div></a>
                 <a href="life-cycle"><div><p>life-cycle</p></div></a>
                 <a href="form.html"><div><p>form</p></div></a>
+                <a href="jsp-script.jsp"><div><p>jsp-script.jsp</p></div></a>
             </article>
         </div>
     </div>
