@@ -105,6 +105,7 @@
                 <a href="jsp-script.jsp"><div><p>jsp-script.jsp</p></div></a>
                 <a href="form-jsp.html"><div><p>form-jsp.html</p></div></a>
                 <a href="response.jsp"><div><p>response.jsp</p></div></a>
+                <a href="jsp-mapping"><div><p>jsp-mapping</p></div></a>
             </article>
         </div>
     </div>
