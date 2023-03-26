@@ -1,12 +1,12 @@
-<%@ page import="java.net.InetAddress" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
 
-    <title>JSP and Servlet</title>
+    <title>Login</title>
 
     <style>
         body {
@@ -47,6 +47,7 @@
             color: #F1F1F1;
             font-size: 50px;
             margin: 0 0 20px;
+            text-align: center;
         }
 
         p {
@@ -65,19 +66,48 @@
             background-color: #414141;
             border-radius: 10px;
             padding: 1px 15px;
-            margin-bottom: 5px;
         }
 
         article a div p {
             font-size: 15px;
         }
 
-        article h1 {
-            text-align: center;
+        article input {
+            margin-bottom: 10px;
+            background-color: #F1F1F1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #F1F1F1;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
+<%
+    Cookie[] cookies = request.getCookies();
+    if (cookies != null) {
+        for (Cookie c : cookies) {
+            if (c.getName().equals("memberID")) {
+                response.sendRedirect("/");
+            }
+        }
+    }
+%>
 <div class="container">
     <div class="window">
         <div class="head">
@@ -87,34 +117,12 @@
         </div>
         <div class="body">
             <article>
-                <p><%=request.getLocalAddr()%></p>
-                <p><%=request.getRemoteAddr()%></p>
-                <h1>Hello, World;</h1>
-                <p># JSP and Servlet study ;</p>
-                <p># This is the index page ;</p>
-            </article>
-        </div>
-    </div>
-    <div class="window">
-        <div class="head">
-            <div class="window-button"></div>
-            <div class="window-button"></div>
-            <div class="window-button"></div>
-        </div>
-        <div class="body">
-            <article>
-                <h1>Links</h1>
-                <a href="jsp-preview.jsp"><div><p>jsp-preview.jsp</p></div></a>
-                <a href="servlet-mapping"><div><p>servlet-mapping</p></div></a>
-                <a href="servlet-mapping-2"><div><p>servlet-mapping-2</p></div></a>
-                <a href="life-cycle"><div><p>life-cycle</p></div></a>
-                <a href="form.html"><div><p>form.html</p></div></a>
-                <a href="jsp-script.jsp"><div><p>jsp-script.jsp</p></div></a>
-                <a href="form-jsp.html"><div><p>form-jsp.html</p></div></a>
-                <a href="response.jsp"><div><p>response.jsp</p></div></a>
-                <a href="jsp-mapping"><div><p>jsp-mapping</p></div></a>
-                <a href="data-share"><div><p>data-share</p></div></a>
-                <a href="login.jsp"><div><p>login.jsp</p></div></a>
+                <h1>Chapter11</h1>
+                <form action="login" method="post">
+                    <input type="text" name="id" id="id" placeholder="ID">
+                    <input type="password" name="pw" placeholder="PW">
+                    <input type="submit" value="Submit">
+                </form>
             </article>
         </div>
     </div>
