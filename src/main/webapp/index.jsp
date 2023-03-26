@@ -1,3 +1,4 @@
+<%@ page import="java.net.InetAddress" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html>
 <head>
@@ -70,6 +71,10 @@
         article a div p {
             font-size: 15px;
         }
+
+        article h1 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +87,8 @@
         </div>
         <div class="body">
             <article>
+                <p><%=request.getLocalAddr()%></p>
+                <p><%=request.getRemoteAddr()%></p>
                 <h1>Hello, World;</h1>
                 <p># JSP and Servlet study ;</p>
                 <p># This is the index page ;</p>
@@ -106,6 +113,7 @@
                 <a href="form-jsp.html"><div><p>form-jsp.html</p></div></a>
                 <a href="response.jsp"><div><p>response.jsp</p></div></a>
                 <a href="jsp-mapping"><div><p>jsp-mapping</p></div></a>
+                <a href="data-share"><div><p>data-share</p></div></a>
             </article>
         </div>
     </div>
