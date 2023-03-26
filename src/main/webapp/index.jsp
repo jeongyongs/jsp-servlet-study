@@ -4,7 +4,8 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
 
     <title>JSP and Servlet</title>
 
@@ -87,8 +88,10 @@
         </div>
         <div class="body">
             <article>
-                <p><%=request.getLocalAddr()%></p>
-                <p><%=request.getRemoteAddr()%></p>
+                <p><%=request.getLocalAddr()%>
+                </p>
+                <p><%=request.getRemoteAddr()%>
+                </p>
                 <h1>Hello, World;</h1>
                 <p># JSP and Servlet study ;</p>
                 <p># This is the index page ;</p>
@@ -104,18 +107,48 @@
         <div class="body">
             <article>
                 <h1>Links</h1>
-                <a href="jsp-preview.jsp"><div><p>jsp-preview.jsp</p></div></a>
-                <a href="servlet-mapping"><div><p>servlet-mapping</p></div></a>
-                <a href="servlet-mapping-2"><div><p>servlet-mapping-2</p></div></a>
-                <a href="life-cycle"><div><p>life-cycle</p></div></a>
-                <a href="form.html"><div><p>form.html</p></div></a>
-                <a href="jsp-script.jsp"><div><p>jsp-script.jsp</p></div></a>
-                <a href="form-jsp.html"><div><p>form-jsp.html</p></div></a>
-                <a href="response.jsp"><div><p>response.jsp</p></div></a>
-                <a href="jsp-mapping"><div><p>jsp-mapping</p></div></a>
-                <a href="data-share"><div><p>data-share</p></div></a>
-                <a href="login.jsp"><div><p>login.jsp</p></div></a>
-                <a href="login-session.jsp"><div><p>login-session.jsp</p></div></a>
+                <a href="jsp-preview.jsp">
+                    <div><p>jsp-preview.jsp</p></div>
+                </a>
+                <a href="servlet-mapping">
+                    <div><p>servlet-mapping</p></div>
+                </a>
+                <a href="servlet-mapping-2">
+                    <div><p>servlet-mapping-2</p></div>
+                </a>
+                <a href="life-cycle">
+                    <div><p>life-cycle</p></div>
+                </a>
+                <a href="form.html">
+                    <div><p>form.html</p></div>
+                </a>
+                <a href="jsp-script.jsp">
+                    <div><p>jsp-script.jsp</p></div>
+                </a>
+                <a href="form-jsp.html">
+                    <div><p>form-jsp.html</p></div>
+                </a>
+                <a href="response.jsp">
+                    <div><p>response.jsp</p></div>
+                </a>
+                <a href="jsp-mapping">
+                    <div><p>jsp-mapping</p></div>
+                </a>
+                <a href="data-share">
+                    <div><p>data-share</p></div>
+                </a>
+                <a href="login.jsp">
+                    <div><p>login.jsp</p></div>
+                </a>
+                <a href="login-session.jsp">
+                    <div><p>login-session.jsp</p></div>
+                </a>
+                <a href="korean.jsp">
+                    <div><p>korean.jsp</p></div>
+                </a>
+                <a href="korean-to-jsp.jsp">
+                    <div><p>korean-to-jsp.jsp</p></div>
+                </a>
             </article>
         </div>
     </div>
