@@ -15,8 +15,8 @@
                 <form action="korean-result.jsp" method="post">
                     <input type="text" name="name" placeholder="이름">
                     <input type="submit" value="제출">
+                </form>
             </article>
-            </form>
         </div>
     </div>
 </div>
