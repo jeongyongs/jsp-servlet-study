@@ -152,6 +152,9 @@
                 <a href="jdbc">
                     <div><p>jdbc</p></div>
                 </a>
+                <a href="dao">
+                    <div><p>dao</p></div>
+                </a>
             </article>
         </div>
     </div>
