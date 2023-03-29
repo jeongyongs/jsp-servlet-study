@@ -31,7 +31,7 @@ public class OracleJdbc extends HttpServlet {
 
             connection = DriverManager.getConnection(db_url, db_id, db_pw);
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.executeUpdate();
+            preparedStatement.executeQuery(); // if sql is SELECT then use executeQuery, else use executeUpdate
             ResultSet resultSet = preparedStatement.getResultSet();
 
             out.write("<html>");
@@ -41,6 +41,9 @@ public class OracleJdbc extends HttpServlet {
             out.write("<title>Oracle DB</title>");
             out.write("</head>");
             out.write("<body>");
+            out.write("<div class=\"container\">");
+            out.write("<div class=\"window\">");
+            out.write("<h1>Chapter14</h1>");
 
             while (resultSet.next()) {
                 String bookName = resultSet.getString("book_name");
@@ -50,6 +53,8 @@ public class OracleJdbc extends HttpServlet {
                 out.write("</div>");
             }
 
+            out.write("</div>");
+            out.write("</div>");
             out.write("</body>");
             out.write("</html>");
         } catch (Exception e) {
