@@ -155,6 +155,9 @@
                 <a href="dao">
                     <div><p>dao</p></div>
                 </a>
+                <a href="connection-pool">
+                    <div><p>connection-pool</p></div>
+                </a>
             </article>
         </div>
     </div>
