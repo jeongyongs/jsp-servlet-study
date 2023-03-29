@@ -149,6 +149,9 @@
                 <a href="korean-to-jsp.jsp">
                     <div><p>korean-to-jsp.jsp</p></div>
                 </a>
+                <a href="jdbc">
+                    <div><p>jdbc</p></div>
+                </a>
             </article>
         </div>
     </div>
